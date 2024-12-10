@@ -1,0 +1,22 @@
+{
+  "name": "SettingsScene",
+  "objects": [
+    {
+      "type": "SettingsMenu",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "components": [
+        {
+          "type": "SettingsController",
+          "properties": {
+            "frostSetting": "FrostSetting",
+            "retroSetting": "RetroSetting",
+            "otherSettings": "OtherSettings"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "MysteryBox",
+  "components": [
+    {
+      "type": "SpriteRenderer",
+      "properties": {
+        "sprite": "MysteryBoxSprite"
+      }
+    },
+    {
+      "type": "BoxCollider2D",
+      "properties": {
+        "size": {
+          "x": 1,
+          "y": 1
+        }
+      }
+    },
+    {
+      "type": "MysteryBoxController",
+      "properties": {
+        "laserWhipPrefab": "LaserWhipPrefab",
+        "stunTrapPrefab": "StunTrapPrefab"
+      }
+    }
+  ]
+}
