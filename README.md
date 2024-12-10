@@ -1,5 +1,5 @@
 # Tethered Onslaught
-+ 2D or 3D
++ 2D (might be developed to 3D later)
 + A duo of players are physically linked by an electric tether in a chaotic battle arena. They have to fight endless waves of enemies for survival using the tether.
   + The tether allows ability sharing, such as when a player blinks, the other player also blinks in sync.
   + The tether create a shield when 2 players move in unison next to each other.
