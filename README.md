@@ -26,6 +26,10 @@ To build and run the game using Unity:
 3. Build the game by selecting `File > Build Settings` and then clicking `Build`.
 4. Run the game by opening the built executable.
 
+## TODO
+
++ Develop to 3D.
+
 ## Contributing
 
 We welcome contributions to the project! To contribute:
