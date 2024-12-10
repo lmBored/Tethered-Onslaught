@@ -1,0 +1,33 @@
+{
+  "name": "Tether",
+  "components": [
+    {
+      "type": "LineRenderer",
+      "properties": {
+        "startColor": {
+          "r": 0,
+          "g": 0,
+          "b": 1,
+          "a": 1
+        },
+        "endColor": {
+          "r": 0,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "startWidth": 0.1,
+        "endWidth": 0.1
+      }
+    },
+    {
+      "type": "TetherController",
+      "properties": {
+        "player1": "Player",
+        "player2": "Player2",
+        "laserWhipPrefab": "LaserWhipPrefab",
+        "stunTrapPrefab": "StunTrapPrefab"
+      }
+    }
+  ]
+}

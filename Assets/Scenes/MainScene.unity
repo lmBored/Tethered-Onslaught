@@ -1,0 +1,102 @@
+{
+  "name": "MainScene",
+  "objects": [
+    {
+      "type": "Player",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "components": [
+        {
+          "type": "PlayerController",
+          "properties": {
+            "moveSpeed": 5,
+            "blinkDistance": 5,
+            "tetherRange": 10,
+            "otherPlayer": "Player2",
+            "tether": "Tether",
+            "shieldPrefab": "ShieldPrefab",
+            "electrocuteEffectPrefab": "ElectrocuteEffectPrefab"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Player",
+      "name": "Player2",
+      "position": {
+        "x": 2,
+        "y": 0
+      },
+      "components": [
+        {
+          "type": "PlayerController",
+          "properties": {
+            "moveSpeed": 5,
+            "blinkDistance": 5,
+            "tetherRange": 10,
+            "otherPlayer": "Player",
+            "tether": "Tether",
+            "shieldPrefab": "ShieldPrefab",
+            "electrocuteEffectPrefab": "ElectrocuteEffectPrefab"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Tether",
+      "position": {
+        "x": 1,
+        "y": 0
+      },
+      "components": [
+        {
+          "type": "TetherController",
+          "properties": {
+            "player1": "Player",
+            "player2": "Player2",
+            "laserWhipPrefab": "LaserWhipPrefab",
+            "stunTrapPrefab": "StunTrapPrefab"
+          }
+        }
+      ]
+    },
+    {
+      "type": "EnemySpawner",
+      "position": {
+        "x": 0,
+        "y": 5
+      },
+      "components": [
+        {
+          "type": "EnemyController",
+          "properties": {
+            "moveSpeed": 3,
+            "attackRange": 1,
+            "health": 100,
+            "player1": "Player",
+            "player2": "Player2",
+            "deathEffectPrefab": "DeathEffectPrefab"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Leaderboard",
+      "position": {
+        "x": 0,
+        "y": -5
+      },
+      "components": [
+        {
+          "type": "LeaderboardController",
+          "properties": {
+            "longestSurvivalTimeText": "LongestSurvivalTimeText",
+            "highestComboChainsText": "HighestComboChainsText"
+          }
+        }
+      ]
+    }
+  ]
+}

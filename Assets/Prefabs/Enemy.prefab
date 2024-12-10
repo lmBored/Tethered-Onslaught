@@ -1,0 +1,37 @@
+{
+  "name": "Enemy",
+  "components": [
+    {
+      "type": "SpriteRenderer",
+      "properties": {
+        "sprite": "EnemySprite"
+      }
+    },
+    {
+      "type": "Rigidbody2D",
+      "properties": {
+        "bodyType": "Dynamic"
+      }
+    },
+    {
+      "type": "BoxCollider2D",
+      "properties": {
+        "size": {
+          "x": 1,
+          "y": 1
+        }
+      }
+    },
+    {
+      "type": "EnemyController",
+      "properties": {
+        "moveSpeed": 3,
+        "attackRange": 1,
+        "health": 100,
+        "player1": "Player",
+        "player2": "Player2",
+        "deathEffectPrefab": "DeathEffectPrefab"
+      }
+    }
+  ]
+}
