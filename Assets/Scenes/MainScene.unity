@@ -19,6 +19,50 @@
             "shieldPrefab": "ShieldPrefab",
             "electrocuteEffectPrefab": "ElectrocuteEffectPrefab"
           }
+        },
+        {
+          "type": "Animator",
+          "properties": {
+            "runtimeAnimatorController": "PlayerAnimatorController"
+          }
+        },
+        {
+          "type": "Animation",
+          "properties": {
+            "animations": [
+              {
+                "name": "Move",
+                "clip": "PlayerMoveAnimation"
+              },
+              {
+                "name": "Blink",
+                "clip": "PlayerBlinkAnimation"
+              },
+              {
+                "name": "Attack",
+                "clip": "PlayerAttackAnimation"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Rigidbody2D",
+          "properties": {
+            "bodyType": "Dynamic",
+            "mass": 1,
+            "drag": 0.5,
+            "angularDrag": 0.05,
+            "gravityScale": 0
+          }
+        },
+        {
+          "type": "BoxCollider2D",
+          "properties": {
+            "size": {
+              "x": 1,
+              "y": 1
+            }
+          }
         }
       ]
     },
@@ -41,6 +85,50 @@
             "shieldPrefab": "ShieldPrefab",
             "electrocuteEffectPrefab": "ElectrocuteEffectPrefab"
           }
+        },
+        {
+          "type": "Animator",
+          "properties": {
+            "runtimeAnimatorController": "PlayerAnimatorController"
+          }
+        },
+        {
+          "type": "Animation",
+          "properties": {
+            "animations": [
+              {
+                "name": "Move",
+                "clip": "PlayerMoveAnimation"
+              },
+              {
+                "name": "Blink",
+                "clip": "PlayerBlinkAnimation"
+              },
+              {
+                "name": "Attack",
+                "clip": "PlayerAttackAnimation"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Rigidbody2D",
+          "properties": {
+            "bodyType": "Dynamic",
+            "mass": 1,
+            "drag": 0.5,
+            "angularDrag": 0.05,
+            "gravityScale": 0
+          }
+        },
+        {
+          "type": "BoxCollider2D",
+          "properties": {
+            "size": {
+              "x": 1,
+              "y": 1
+            }
+          }
         }
       ]
     },
@@ -58,6 +146,31 @@
             "player2": "Player2",
             "laserWhipPrefab": "LaserWhipPrefab",
             "stunTrapPrefab": "StunTrapPrefab"
+          }
+        },
+        {
+          "type": "Animator",
+          "properties": {
+            "runtimeAnimatorController": "TetherAnimatorController"
+          }
+        },
+        {
+          "type": "Animation",
+          "properties": {
+            "animations": [
+              {
+                "name": "AbilitySharing",
+                "clip": "TetherAbilitySharingAnimation"
+              },
+              {
+                "name": "ShieldCreation",
+                "clip": "TetherShieldCreationAnimation"
+              },
+              {
+                "name": "Electrocution",
+                "clip": "TetherElectrocutionAnimation"
+              }
+            ]
           }
         }
       ]
@@ -78,6 +191,46 @@
             "player1": "Player",
             "player2": "Player2",
             "deathEffectPrefab": "DeathEffectPrefab"
+          }
+        },
+        {
+          "type": "Animator",
+          "properties": {
+            "runtimeAnimatorController": "EnemyAnimatorController"
+          }
+        },
+        {
+          "type": "Animation",
+          "properties": {
+            "animations": [
+              {
+                "name": "Move",
+                "clip": "EnemyMoveAnimation"
+              },
+              {
+                "name": "Attack",
+                "clip": "EnemyAttackAnimation"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Rigidbody2D",
+          "properties": {
+            "bodyType": "Dynamic",
+            "mass": 1,
+            "drag": 0.5,
+            "angularDrag": 0.05,
+            "gravityScale": 0
+          }
+        },
+        {
+          "type": "BoxCollider2D",
+          "properties": {
+            "size": {
+              "x": 1,
+              "y": 1
+            }
           }
         }
       ]

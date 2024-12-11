@@ -28,6 +28,31 @@
         "laserWhipPrefab": "LaserWhipPrefab",
         "stunTrapPrefab": "StunTrapPrefab"
       }
+    },
+    {
+      "type": "Animator",
+      "properties": {
+        "runtimeAnimatorController": "TetherAnimatorController"
+      }
+    },
+    {
+      "type": "Animation",
+      "properties": {
+        "animations": [
+          {
+            "name": "AbilitySharing",
+            "clip": "TetherAbilitySharingAnimation"
+          },
+          {
+            "name": "ShieldCreation",
+            "clip": "TetherShieldCreationAnimation"
+          },
+          {
+            "name": "Electrocution",
+            "clip": "TetherElectrocutionAnimation"
+          }
+        ]
+      }
     }
   ]
 }
