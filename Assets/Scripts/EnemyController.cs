@@ -14,10 +14,12 @@ public class EnemyController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveDirection;
     private bool isAttacking = false;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         StartCoroutine(SpawnEnemies());
     }
 
@@ -49,11 +51,14 @@ public class EnemyController : MonoBehaviour
         {
             StartCoroutine(Attack());
         }
+
+        animator.SetTrigger("Move");
     }
 
     IEnumerator Attack()
     {
         isAttacking = true;
+        animator.SetTrigger("Attack");
         // Implement attack logic here
         yield return new WaitForSeconds(1f);
         isAttacking = false;
@@ -70,6 +75,7 @@ public class EnemyController : MonoBehaviour
 
     void Die()
     {
+        animator.SetTrigger("Die");
         Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }

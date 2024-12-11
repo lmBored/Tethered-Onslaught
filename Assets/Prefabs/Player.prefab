@@ -33,6 +33,31 @@
         "shieldPrefab": "ShieldPrefab",
         "electrocuteEffectPrefab": "ElectrocuteEffectPrefab"
       }
+    },
+    {
+      "type": "Animator",
+      "properties": {
+        "runtimeAnimatorController": "PlayerAnimatorController"
+      }
+    },
+    {
+      "type": "Animation",
+      "properties": {
+        "animations": [
+          {
+            "name": "Move",
+            "clip": "PlayerMoveAnimation"
+          },
+          {
+            "name": "Blink",
+            "clip": "PlayerBlinkAnimation"
+          },
+          {
+            "name": "Attack",
+            "clip": "PlayerAttackAnimation"
+          }
+        ]
+      }
     }
   ]
 }

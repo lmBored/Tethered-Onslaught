@@ -18,16 +18,23 @@ public class PlayerController : MonoBehaviour
     private bool isBlinking = false;
     private bool isShieldActive = false;
     private bool isElectrocuting = false;
+    private Animator animator;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         moveInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         moveVelocity = moveInput.normalized * moveSpeed;
+
+        if (moveInput != Vector2.zero)
+        {
+            animator.SetTrigger("Move");
+        }
 
         if (Input.GetKeyDown(KeyCode.Space) && !isBlinking)
         {
@@ -53,6 +60,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator Blink()
     {
         isBlinking = true;
+        animator.SetTrigger("Blink");
         Vector2 blinkPosition = rb.position + moveInput.normalized * blinkDistance;
         rb.MovePosition(blinkPosition);
         otherPlayer.GetComponent<PlayerController>().BlinkToPosition(blinkPosition);
@@ -68,6 +76,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator ActivateShield()
     {
         isShieldActive = true;
+        animator.SetTrigger("ShieldCreation");
         GameObject shield = Instantiate(shieldPrefab, (transform.position + otherPlayer.transform.position) / 2, Quaternion.identity);
         yield return new WaitForSeconds(2f);
         Destroy(shield);
@@ -77,6 +86,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator Electrocute()
     {
         isElectrocuting = true;
+        animator.SetTrigger("Electrocution");
         GameObject electrocuteEffect = Instantiate(electrocuteEffectPrefab, (transform.position + otherPlayer.transform.position) / 2, Quaternion.identity);
         yield return new WaitForSeconds(1f);
         Destroy(electrocuteEffect);

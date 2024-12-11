@@ -32,6 +32,27 @@
         "player2": "Player2",
         "deathEffectPrefab": "DeathEffectPrefab"
       }
+    },
+    {
+      "type": "Animator",
+      "properties": {
+        "runtimeAnimatorController": "EnemyAnimatorController"
+      }
+    },
+    {
+      "type": "Animation",
+      "properties": {
+        "animations": [
+          {
+            "name": "Move",
+            "clip": "EnemyMoveAnimation"
+          },
+          {
+            "name": "Attack",
+            "clip": "EnemyAttackAnimation"
+          }
+        ]
+      }
     }
   ]
 }
