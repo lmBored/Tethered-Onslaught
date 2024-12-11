@@ -58,6 +58,13 @@
           }
         ]
       }
+    },
+    {
+      "type": "SpringJoint2D",
+      "properties": {
+        "connectedBody": "Tether",
+        "distance": 10
+      }
     }
   ]
 }

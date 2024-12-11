@@ -63,6 +63,13 @@
               "y": 1
             }
           }
+        },
+        {
+          "type": "SpringJoint2D",
+          "properties": {
+            "connectedBody": "Tether",
+            "distance": 10
+          }
         }
       ]
     },
@@ -129,6 +136,13 @@
               "y": 1
             }
           }
+        },
+        {
+          "type": "SpringJoint2D",
+          "properties": {
+            "connectedBody": "Tether",
+            "distance": 10
+          }
         }
       ]
     },
@@ -171,6 +185,13 @@
                 "clip": "TetherElectrocutionAnimation"
               }
             ]
+          }
+        },
+        {
+          "type": "SpringJoint2D",
+          "properties": {
+            "connectedBody": ["Player", "Player2"],
+            "distance": 10
           }
         }
       ]

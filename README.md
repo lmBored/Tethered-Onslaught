@@ -13,6 +13,7 @@ Tethered Onslaught is a 2D game built with Unity where a duo of players are phys
 - **Tether Customization**: The tether is customizable with mystery boxes (e.g., turning it into a laser whip or a stun trap).
 - **Leaderboard**: There's a leaderboard for longest survival time and highest combo chains.
 - **Multiple Settings**: The game can be in multiple settings based on the rounds, such as frost, retro, etc.
+- **Physics Rules**: The tether now has physics rules implemented using `SpringJoint2D` components to simulate realistic tether behavior and interactions with players and the environment.
 
 ## Build and Run
 

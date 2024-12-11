@@ -53,6 +53,13 @@
           }
         ]
       }
+    },
+    {
+      "type": "SpringJoint2D",
+      "properties": {
+        "connectedBody": ["Player", "Player2"],
+        "distance": 10
+      }
     }
   ]
 }
