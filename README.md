@@ -2,7 +2,7 @@
 
 ## Description
 
-Tethered Onslaught is a 2D game built with Unity where a duo of players are physically linked by an electric tether in a chaotic battle arena. They have to fight endless waves of enemies for survival using the tether.
+Tethered Onslaught is a (top-down) 2D game built with Unity where a duo of players are physically linked by an electric tether in a chaotic battle arena. They have to fight endless waves of enemies for survival using the tether.
 
 ### Main Features
 
