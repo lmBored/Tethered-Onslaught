@@ -57,6 +57,64 @@
           }
         }
       ]
+    },
+    {
+      "type": "SettingsMenu",
+      "name": "NewSettingsMenu",
+      "position": {
+        "x": 1,
+        "y": 1
+      },
+      "components": [
+        {
+          "type": "SettingsController",
+          "properties": {
+            "frostSetting": "NewFrostSetting",
+            "retroSetting": "NewRetroSetting",
+            "otherSettings": "NewOtherSettings"
+          }
+        },
+        {
+          "type": "Animator",
+          "properties": {
+            "runtimeAnimatorController": "NewSettingsMenuAnimatorController"
+          }
+        },
+        {
+          "type": "Animation",
+          "properties": {
+            "animations": [
+              {
+                "name": "Open",
+                "clip": "NewSettingsMenuOpenAnimation"
+              },
+              {
+                "name": "Close",
+                "clip": "NewSettingsMenuCloseAnimation"
+              }
+            ]
+          }
+        },
+        {
+          "type": "Rigidbody2D",
+          "properties": {
+            "bodyType": "Dynamic",
+            "mass": 1,
+            "drag": 0.5,
+            "angularDrag": 0.05,
+            "gravityScale": 0
+          }
+        },
+        {
+          "type": "BoxCollider2D",
+          "properties": {
+            "size": {
+              "x": 1,
+              "y": 1
+            }
+          }
+        }
+      ]
     }
   ]
 }
